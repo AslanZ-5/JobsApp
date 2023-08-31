@@ -5,7 +5,6 @@ import { useFonts } from "expo-font";
 // SplashScreen.preventAutoHideAsync();
 
 export const unstable_settings = {
-  // Ensure any route can link back to `/`
   initialRouteName: "home",
 };
 
@@ -17,7 +16,7 @@ const Layout = () => {
   });
 
   if (!fontsLoaded) {
-    return <Slot />;
+    return null;
   }
 
   return (
